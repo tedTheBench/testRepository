@@ -1,0 +1,76 @@
+@import '_variables';
+@import '_bio';
+
+.blog-nav{
+	@extend %centered-list-style;
+	background-color: $nav-background-color;
+	padding: 1em;
+	margin: $margin-small;
+	box-shadow: 5px 2px 5px gray;
+}
+
+.flex-container{
+	display: flex;
+	flex-direction: column;
+	margin: $margin-small;
+	box-shadow: 5px 2px 5px gray;
+	border-left: 0.5em solid black;
+	border-right: 0.5em solid black;
+}
+aside{
+	background-color: $aside-background-color;
+	display: inline-block;
+	padding: 1em;
+	border-top: 0.5em solid black;
+}
+article{
+	background-color: $post-background-color;
+	padding: 1em;
+}
+footer{
+	background-color: $footer-background-color;
+	padding: 1em;
+	margin: $margin-small;
+	box-shadow: 5px 2px 5px gray;
+	border: 0.5em solid black;
+}
+nav ul{
+	border-left: 0.5em solid black;
+	border-right: 0.5em solid black;
+	border-bottom: 0.5em solid black;
+}
+.social-icon{
+	padding: 0 1em;
+}
+dt{
+	font-weight: bold;
+}
+h1{
+	text-align: center;
+}
+a{
+	color: black;
+}
+
+@media only screen and (min-width: $breakpoint-small){
+	
+}
+@media only screen and (min-width: $breakpoint-medium){
+	.flex-container{
+		flex-direction: row;
+	}
+	.blog-nav, .flex-container, footer, .bio{
+		margin: $margin-medium;
+	}
+	article{
+		border-right: 0.5em solid black;
+		flex: 4;
+	}
+	aside{
+		border: none;
+		flex: 1;
+	}
+}
+@media only screen and (min-width: $breakpoint-large){
+		
+}
