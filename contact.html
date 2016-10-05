@@ -1,13 +1,12 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-  <title>Blog Post</title>
+  <title>Stephen Groening Contact</title>
   <meta charset="utf-8">
-  <meta name="description" content="Blog post number 1">
+  <meta name="description" content="Contact info">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- style sheet -->
   <link rel="stylesheet" href="test.css">
-  
 </head>
 <body>
 <div class="container">
@@ -16,47 +15,57 @@
       alt="Stephen Groening" />
     <h1>Stephen Groening</h1>
     <blockquote class="bio-blockquote">
-      <q>Say something clever</q>
+      <q>Make websites ugly again!</q>
     </blockquote>
+    
   </div>
 </div>
 
 <nav>
   <ul class="blog-nav">
-    <li><a href=""><< Previous Post</a></li>
     <li><a href="index.html">Home</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="post2.html">Next Post >></a></li>
+    <li><a href="post1.html">Blog</a></li>
   </ul>
 </nav>
 
 <main role="main">
-  <div class="flex-container">
+<div class="flex-container">
 <article>
-  <h1>Steve's Blog</h1>
-  <header>
-    <h2>Blog post #1</h2>
+<div class="contact-flex-container">
+<div class="contact-info">
+  <h1>Contact</h1>
+  <address>
     <dl>
-      <dt>Author</dt>
-      <dd>Stephen Groening</dd>
-      <dt>Date Posted: </dt>
-      <dd><time datetime="2016-10-3">October 3, 2016</time></dd>
+      <dt>Location: </dt>
+      <dd>Calgary, AB, Canada</dd>
+      <dt>Email: </dt>
+      <dd><a href="mailto:stephengroening@gmail.com">StephenGroening@gmail.com</a></dd>
+      <dt>Phone: </dt>
+      <dd><a href="tel:15555555555">1 (555) 555-5555</a></dd>
     </dl>
-  </header>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales dolor ut lacus scelerisque ullamcorper ut eget libero. Aliquam rutrum urna eget consectetur finibus. Aenean sit amet turpis faucibus sapien eleifend maximus a ut mauris. Curabitur ultricies tellus vitae odio maximus commodo. Suspendisse ac diam metus. Vestibulum justo urna, sagittis non diam maximus, varius gravida nulla. Aliquam porta, arcu vitae interdum mattis, lorem orci lacinia metus, sit amet ornare augue quam eget enim. Duis mollis justo eget arcu rhoncus ultrices. Phasellus sit amet condimentum ipsum. Ut fringilla gravida turpis at pharetra.</p>
-
-    <p>Sed tellus tortor, vehicula vel sapien vel, rutrum iaculis urna. Nullam faucibus a dui sit amet mattis. Etiam venenatis, elit et scelerisque dapibus, urna quam aliquam lacus, ut ultricies magna lorem eget ante. Vivamus eget scelerisque erat. Mauris ex ex, lacinia et metus et, tristique porta metus. Nulla condimentum leo ut aliquam luctus. Donec vitae libero nec est cursus commodo. Vivamus ac enim mi. Mauris in condimentum ipsum. Nulla magna justo, luctus in magna ut, facilisis imperdiet neque. Suspendisse congue, neque a iaculis rutrum, nisl felis pellentesque purus, eget consequat lectus risus at est. Aliquam quis quam volutpat, ultrices nunc eu, consequat est.</p>
-
-    <p>Donec faucibus arcu vitae laoreet sodales. Pellentesque pulvinar ultrices metus ac fringilla. Pellentesque congue feugiat enim, non hendrerit libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse quis turpis id metus dapibus tempus vitae id dui. Phasellus blandit aliquet risus. Aliquam erat volutpat. Proin quis sodales justo. Duis laoreet, augue vitae posuere eleifend, leo erat imperdiet eros, ac euismod dolor erat ut nisl.</p>
-
-    <p>Maecenas varius pretium risus, eget porta lacus mattis eget. Phasellus dictum hendrerit euismod. Mauris at suscipit mi. Nullam fringilla a mi at interdum. Duis at ante vel sem auctor porta sed nec augue. In consequat a erat viverra feugiat. Ut turpis diam, porta vitae massa sed, ornare blandit urna. In laoreet molestie felis in tempor. Sed et metus orci. Integer felis orci, molestie in quam nec, commodo ornare massa. Aenean dictum consequat est in laoreet. Nam tincidunt, ipsum in semper hendrerit, urna lectus posuere urna, id luctus augue mauris sed nisi. Aliquam quis urna quis lorem hendrerit laoreet.</p>
-
-    <p>Nam et efficitur orci. Proin commodo hendrerit interdum. In condimentum aliquet ipsum, at ultricies lacus fringilla a. Sed sed pretium nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas euismod et mi at sodales. Mauris eu risus ut diam aliquet maximus non sit amet urna. Integer aliquam finibus libero, vel interdum nibh volutpat id. Proin et odio ipsum. Pellentesque id urna sem. Nulla eget metus eget risus tempor malesuada.</p>
+  </address>
+    
+</div>
+<div class="contact-form">
+    <form>
+      <fieldset>
+      <legend>Comment</legend>
+        <label for="name">Name:</label><br/>
+        <input type="text" name="name" id="name" placeholder="Name" required aria-required="true"><br/>
+        <label for="email">Email:</label><br/>
+        <input type="text" name="email" id="email" placeholder="YourEmail@Adress.com" required aria-required="true"><br/>
+        <label for="comment">Comment:</label><br/>
+        <textarea name="comment" id="comment" placeholder="Feel free to leave a comment" required aria-required="true"></textarea><br/>
+        <input type="submit" name="Reserve" value="Submit">
+      </fieldset>
+    </form>
+</div>
+</div>
 </article>
 <aside>
-  <h3>Other Posts</h3>
+  <h3>Blog Posts</h3>
   <ul class="asideNav">
+    <li><a href="post1.html">post 1</a></li>
     <li><a href="post2.html">post 2</a></li>
     <li><a href="post3.html">post 3</a></li>
     <li><a href="post4.html">post 4</a></li>
